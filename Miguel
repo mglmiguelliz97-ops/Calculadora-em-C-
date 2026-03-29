@@ -3,7 +3,7 @@ while ( continuar)
 {
   Console.WriteLine("==Calculadora em C#==");
     Console.WriteLine(" Escolha + | - | X | / | ou sair ");
-      string opcao = Console.ReadLine ();
+      string? opcao = Console.ReadLine ();
 if( opcao == "sair" )
   {
    continuar = false;
@@ -17,7 +17,7 @@ if( opcao == "sair" )
      
 if (opcao == "+")  
   {
-  Console.WriteLine(" o seu resultado é" + ( n1 + n2 ));
+  Console.WriteLine(" o seu resultado é " + ( n1 + n2 ));
   }
 else if ( opcao == "/")
  if ( n2 == 0 ) 
@@ -27,17 +27,16 @@ else if ( opcao == "/")
   else
   {
     double resultado = n1 / n2;
-     Console.WriteLine(" Seu resultado é" + resultado);
+     Console.WriteLine(" Seu resultado é " + resultado);
     }
  
 else if ( opcao == "x")
   {
-    Console.WriteLine(" Resultado da sua multiplicação foi" + (n1*n2)); 
+    Console.WriteLine(" Resultado da sua multiplicação foi " + (n1*n2)); 
     }
 else if ( opcao == "-")
   {
-    Console.WriteLine(" Resultado da subtração é" + ( n1-n2));
+    Console.WriteLine(" Resultado da subtração é  " + ( n1-n2));
   }
 }
  Console.WriteLine(" Calculadora Encerrada, até a Proxima :)" );
-  

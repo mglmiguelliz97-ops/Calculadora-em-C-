@@ -1,0 +1,43 @@
+bool continuar = true;
+while ( continuar)
+{
+  Console.WriteLine("==Calculadora em C#==");
+    Console.WriteLine(" Escolha + | - | X | / | ou sair ");
+      string opcao = Console.ReadLine ();
+if( opcao == "sair" )
+  {
+   continuar = false;
+     break;
+  }
+  Console.WriteLine(" Digite o primeiro numero ");
+    double n1 = double.Parse(Console.ReadLine());
+     
+  Console.WriteLine(" Digite o segundo numero ");
+      double n2 = double.Parse(Console.ReadLine());
+     
+if (opcao == "+")  
+  {
+  Console.WriteLine(" o seu resultado é" + ( n1 + n2 ));
+  }
+else if ( opcao == "/")
+ if ( n2 == 0 ) 
+  {
+    Console.WriteLine(" Erro! o numero não pode ser 0");
+  } 
+  else
+  {
+    double resultado = n1 / n2;
+     Console.WriteLine(" Seu resultado é" + resultado);
+    }
+ 
+else if ( opcao == "x")
+  {
+    Console.WriteLine(" Resultado da sua multiplicação foi" + (n1*n2)); 
+    }
+else if ( opcao == "-")
+  {
+    Console.WriteLine(" Resultado da subtração é" + ( n1-n2));
+  }
+}
+ Console.WriteLine(" Calculadora Encerrada, até a Proxima :)" );
+  
